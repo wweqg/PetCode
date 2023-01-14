@@ -38,7 +38,7 @@ If this is the first time you are using this user guide, it is highly recommende
         + [Adding a supplier](#adding-a-supplier--add-s)
         + [Adding an order to a buyer](#adding-an-order-to-a-buyer--add-o)
         + [Adding a pet to a supplier](#adding-a-pet-to-a-supplier--add-p)
-        + [Adding a person with a popup window](#adding-a-contact-with-a-popup-window--add)
+        + [Adding a contact with a popup window](#adding-a-contact-with-a-popup-window--add)
     * [Matching pets to an order](#matching-pets-to-an-order--match)
     * [Deleting a contact or item](#deleting-a-contact-or-item--delete)
     * [Editing attributes of a contact](#editing-attributes-of-a-contact--edit)
@@ -431,7 +431,7 @@ To help you better understand the hierarchy of the second sample command, we ill
 
 Adds an order to a buyer contact. This is especially useful when an existing buyer has a new order, or when the buyer confirms the order some time after being added to the contacts.
 
-Format: `add-o INDEX_OF_BUYER o_st/STATUS o_r/add-r o_a/AGE o_sp/SPECIES o_c/COLOR o_cp/COLOR_PATTERN [o_p/PRICE] o_pr/PRICE_RANGE o_d/DATE [o_ar/ADDITIONAL_REQUEST]…​`
+Format: `add-o INDEX_OF_BUYER o_st/STATUS o_r/add-r o_a/AGE o_sp/SPECIES o_c/COLOR o_cp/COLOR_PATTERN o_p/PRICE o_pr/PRICE_RANGE o_d/DATE [o_ar/ADDITIONAL_REQUEST]…​`
 
 <div markdown="span" class="alert alert-warning">
 
@@ -708,9 +708,9 @@ address, email, location, name, phone. Please provide **one** out of the five wh
 
 Examples:
 
-* `find a/6th College Ave West`
-* `find e/blackball@furry.com`
-* `find ph/98986668`
+* `find a/6th College Ave West`, looks for and displays (if any) any person who lives at this address.
+* `find e/blackball@furry.com`, looks for and displays (if any) any person who has this email address.
+* `find ph/98986668`, looks for and displays (if any) any person whose phone number is that.
 
 <div markdown="span" class="alert alert-info">
 
@@ -736,9 +736,9 @@ for more information on prefixes and attributes.
 
 Examples:
 
-* `find-b a/6th College Ave West`
-* `find-b e/blackball@furry.com`
-* `find-b ph/98986668`
+* `find-b a/6th College Ave West`, looks for and displays any `Buyer` who lives at this address.
+* `find-b e/blackball@furry.com`, looks for and displays any `Buyer` who has this email address.
+* `find-b ph/98986668`, looks for and displays any `Buyer` whose phone number is that.
 
 [Go back to [Table of Contents](#table-of-contents)]
 [Go back to [Commands](#commands)]
@@ -754,9 +754,9 @@ for more information on prefixes and attributes.
 
 Examples:
 
-* `find-d a/6th College Ave West`
-* `find-d e/blackball@furry.com`
-* `find-d ph/98986668`
+* `find-d a/6th College Ave West`, looks for and displays any `Deliverer` who lives at this address.
+* `find-d e/blackball@furry.com`, looks for and displays any `Deliverer` who has this email address.
+* `find-d ph/98986668`, looks for and displays any `Deliverer` whose phone number is that.
 
 [Go back to [Table of Contents](#table-of-contents)]
 [Go back to [Commands](#commands)]
@@ -772,9 +772,9 @@ for more information on prefixes and attributes.
 
 Examples:
 
-* `find-s a/6th College Ave West`
-* `find-s e/blackball@furry.com`
-* `find-s ph/98986668`
+* `find-s a/6th College Ave West`, looks for and displays any `Supplier` who lives at this address.
+* `find-s e/blackball@furry.com`, looks for and displays any `Supplier` who has this email address.
+* `find-s ph/98986668`, looks for and displays any `Supplier` whose phone number is that.
 
 [Go back to [Table of Contents](#table-of-contents)]
 [Go back to [Commands](#commands)]
